@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZingMp3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zing-mp3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-IX-Chl">
+                                <rect key="frame" x="-8" y="142" width="391" height="383"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZING MP3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-wl-5HU">
+                                <rect key="frame" x="126" y="591" width="122" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="PJM-or-84l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.0" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NGOC " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqu-rH-8HE">
+                                <rect key="frame" x="150" y="14" width="74" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.95322716247019557" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mRy-IX-Chl" secondAttribute="trailing" constant="-24" id="Ajf-vG-B0u"/>
+                            <constraint firstItem="mRy-IX-Chl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="VYV-Mo-fs4"/>
+                            <constraint firstItem="Ste-wl-5HU" firstAttribute="centerX" secondItem="mRy-IX-Chl" secondAttribute="centerX" id="Xsd-m8-Fak"/>
+                            <constraint firstItem="mRy-IX-Chl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cMK-ca-ejY"/>
+                            <constraint firstItem="Mqu-rH-8HE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ipK-WR-b2f"/>
+                            <constraint firstItem="mRy-IX-Chl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="122" id="lOf-cF-5Xn"/>
+                            <constraint firstItem="Ste-wl-5HU" firstAttribute="top" secondItem="mRy-IX-Chl" secondAttribute="bottom" constant="66" id="rW2-ef-iyO"/>
+                            <constraint firstItem="mRy-IX-Chl" firstAttribute="top" secondItem="Mqu-rH-8HE" secondAttribute="bottom" constant="101" id="wuC-t4-uVf"/>
+                            <constraint firstItem="mRy-IX-Chl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zHf-CJ-gOo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ste-wl-5HU" secondAttribute="bottom" constant="59" id="zyP-pk-Jwp"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imv_logo" destination="mRy-IX-Chl" id="EJH-Wh-XvW"/>
+                        <outlet property="lbl_name" destination="Mqu-rH-8HE" id="oaN-HT-LX6"/>
+                        <outlet property="lbl_title" destination="Ste-wl-5HU" id="qVM-WM-PPA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="353.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zing-mp3.jpg" width="1024" height="1024"/>
+    </resources>
+</document>
